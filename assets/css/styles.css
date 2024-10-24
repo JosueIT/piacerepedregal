@@ -122,17 +122,20 @@ a {
 }
 
 .boton-click a {
-    text-decoration: underline;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 12px;
     font-weight: 300;
-}
-
-.boton-click a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    font-size: 26px;
-    font-weight: 400;
+    width: 40%;
+    height: 35px;
+    background-color: #012c9e;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px #b9b9b9;
+    max-width: 215px;
+    min-width: 115px;
 }
 
 
