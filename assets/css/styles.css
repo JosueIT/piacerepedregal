@@ -31,13 +31,13 @@ nav {
     justify-content: center;
     align-items: end;
     width: 80%;
-    height: 300px;
-    padding: 25px;
+    height: 150px;
+    padding: 35px;
     border-bottom: Solid 1px black;
 }
 
 nav img {
-    width: 125px;
+    width: 225px;
 }
 
 article {
