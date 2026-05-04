@@ -1,41 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/assets/css/styles.css">
-        <title>Piacere</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <img src="/assets/img/Logotipo_negro_Piacere.png" alt="logo-piacere">
-            </nav>
-        </header>
-        <article>
-            <div class="catalogos">
-                <div class="catalogo-enlace" id="mobiliario">
-                    <img src="/assets/img/portada4.png" onClick="abrirPdf()">
-                </div>
-                <div class="boton-click">
-                    <a onClick="abrirPdf()">CLICK AQUÍ</a>
-                </div>
-            </div>
-        </article>
-        <article>
-            <div id="tira_marcas"></div>
-        </article>
-        <footer>
-            <a>2024 © Piacere</a>
-        </footer>
-        <div class="whatsapp-btn">
-            <a href='https://wa.me/5579235862' , '_blank'>
-                <img src="/assets/img/whatsapp fondo sombra.png"
-                    alt="WhatsApp-1">
-            </a>
-        </div>
-    </body>
-</html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piacere</title>
 
-<script src="/assets/js/scripts.js"></script>
-<script src="https://cod|.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #F9F9F9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid #111;
+            padding: 20px 0;
+        }
+
+        header img {
+            width: 160px;
+        }
+
+        .container {
+            text-align: center;
+            padding: 80px 20px;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 35px;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            border: 1px solid #111;
+            text-decoration: none;
+            color: #111;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #111;
+            color: white;
+        }
+
+        .small {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="./assets/img/Logotipo_negro_Piacere.png" alt="Piacere">
+</header>
+
+<div class="container">
+    <h1>Este catálogo ha cambiado</h1>
+
+    <p>
+        Hemos actualizado nuestro catálogo.  
+        Da clic en el botón para ver la nueva versión.
+    </p>
+
+    <!-- 🔥 CAMBIA ESTE LINK -->
+    <a href="https://app.netlify.com/projects/venta-stock-pedregal/" class="btn">
+        VER NUEVO CATÁLOGO
+    </a>
+
+    <div class="small">
+        Serás redirigido automáticamente en unos segundos…
+    </div>
+</div>
+
+<script>
+    // 🔥 redirección automática (opcional)
+    setTimeout(() => {
+        window.location.href = "https://app.netlify.com/projects/venta-stock-pedregal/";
+    }, 5000);
+</script>
+
+</body>
+</html>
